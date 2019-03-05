@@ -13,6 +13,7 @@ public class BarberService {
     private BarberRepository barberRepository;
 
     public Barber add(Barber barber) {
+
         if (barber.getFirstName() != null) {
             barberRepository.save(barber);
             return barber;
